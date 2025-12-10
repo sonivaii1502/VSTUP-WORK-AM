@@ -22,12 +22,12 @@ h1{
     background-color: white;
     padding: 10px;
 }
-#favorite-list{
+#favoriteList{
     list-style: none;
     margin: 0;
     padding: 0;
 }
-#favorite-list li{
+#favoriteList li{
     padding: 5px;
     cursor: pointer;
     border-bottom: 1px solid gray;
@@ -40,4 +40,28 @@ h1{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.441);
     display: none;
+}
+.modal-content{
+    background-color: white;
+    padding: 20px;
+    width: 400px;
+    margin: 50px auto;
+}
+.img-favorite{
+    width: 30px;
+}
+.crypto-decs{
+    max-height: 150px;
+    overflow-y: auto;
+    font-size: 14px;
+}
+.btn{
+    margin-top: 10px;
+}
+.search-box{
+    width: 900px;
+}
+#search-crypto{
+    margin-left: 40%;
+    width: 80%;
 }
