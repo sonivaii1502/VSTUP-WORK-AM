@@ -28,12 +28,12 @@ h1{
     padding: 10px;
     border-radius: 10px;
 }
-#favoriteList{
+#favorite-list{
     list-style: none;
     margin: 0;
     padding: 0;
 }
-#favoriteList li{
+#favorite-list li{
     padding: 5px;
     cursor: pointer;
     border-bottom: 1px solid gray;
@@ -54,7 +54,7 @@ h1{
     margin: 50px auto;
     border-radius: 5%;
 }
-#closeBtn{
+#close-btn{
     margin-bottom: 20px;
 }
 .img-favorite{
@@ -74,7 +74,7 @@ h1{
     justify-content: center;
     align-items: center;
 }
-#searchCrypto{
+#search-crypto{
     margin-left: 40%;
     width: 80%;
 }
