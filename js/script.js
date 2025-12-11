@@ -80,5 +80,40 @@ class CryptoApp{
         this.modal.open(html);
     }
 }
+class Favorites{
+    constructor(){
+        this.key = 'cryptoFavorites';
+        this.favorites = JSON.parse(localStorage.getItem(this.key)) II [];
+    }
+    add (id, name, image){
+        if(!this.favorites.some(item => item.id === id)){
+            this.favorites.push({ id, name, image });
+            this.save();
+        }
+    }
+    getAll(){
+        return this.favorites;
+    }
+    save(){
+        localStorage.setItem(this.key, JSON.stringify(this.favorites));
+    }
+}
+class Modal{
+    constructor(){
+        this.modal = document.querySelector('#modal');
+        this.body = document.querySelector('#modal-body');
+        this.closeBtn = document.querySelector('#closeBtn');
+        this.closeBtn.addEventListener('click', (e) => {
+            if(e.target === this.modal) this.close();
+        });
+    }
+    open(contentHTML){
+        this.body.innerHTML = contentHTML;
+        this.modal.style.display = 'block';
+    }
+    close(){
+        this.modal.style.display = 'none';
+    }
+}
 
 const app = new CryptoApp();
