@@ -1,4 +1,4 @@
-@import url('https://googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,20 +7,26 @@
 }
 body{
     background-color: #e4e4e7;
+    width: 1260px;
+    margin: auto;
 }
 h1{
     text-align: center;
 }
 .main{
-    max-width: 1200px;
+    max-width: 60%;
     margin: auto;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 10px;
     margin-top: 20px;
 }
 .favorites{
     width: 300px;
     background-color: white;
     padding: 10px;
+    border-radius: 10px;
 }
 #favoriteList{
     list-style: none;
@@ -60,6 +66,9 @@ h1{
 }
 .search-box{
     width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #searchCrypto{
     margin-left: 40%;
