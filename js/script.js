@@ -94,6 +94,10 @@ class Favorites{
     getAll(){
         return this.favorites;
     }
+    remove(id){
+        this.favorites = this.favorites.filter(item => item.id !== id);
+        this.save();
+    }
     save(){
         localStorage.setItem(this.key, JSON.stringify(this.favorites));
     }
@@ -104,7 +108,8 @@ class Modal{
         this.body = document.querySelector('#modal-body');
         this.closeBtn = document.querySelector('#closeBtn');
         this.closeBtn.addEventListener('click', (e) => {
-            if(e.target === this.modal) this.close();
+            fetch('http://127.0.0.1:7242/ingest/eb75b26e-c710-4f22-b871-3b2e7f649e47',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'script.js:110',message:'closeBtn clicked, calling close',data:{},timestamp:Date.now(),sessionId:'debug-session',runId:'post-fix'})}).catch(()=>{});
+            this.close();
         });
     }
     open(contentHTML){
