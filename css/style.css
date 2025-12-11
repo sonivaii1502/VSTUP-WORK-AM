@@ -50,8 +50,12 @@ h1{
 .modal-content{
     background-color: white;
     padding: 20px;
-    width: 400px;
+    width: 850px;
     margin: 50px auto;
+    border-radius: 5%;
+}
+#closeBtn{
+    margin-bottom: 20px;
 }
 .img-favorite{
     width: 30px;
