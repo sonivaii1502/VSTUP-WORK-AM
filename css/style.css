@@ -7,7 +7,7 @@
 }
 body{
     background-color: #e4e4e7;
-    width: 1260px;
+    max-width: 1260px;
     margin: auto;
 }
 h1{
@@ -50,7 +50,7 @@ h1{
 .modal-content{
     background-color: white;
     padding: 20px;
-    width: 850px;
+    width: 600px;
     margin: 50px auto;
     border-radius: 5%;
 }
@@ -60,7 +60,7 @@ h1{
 .img-favorite{
     width: 30px;
 }
-.crypto-decs{
+.crypto-desc{
     max-height: 150px;
     overflow-y: auto;
     font-size: 14px;
