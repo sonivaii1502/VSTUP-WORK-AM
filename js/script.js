@@ -83,7 +83,7 @@ class CryptoApp{
 class Favorites{
     constructor(){
         this.key = 'cryptoFavorites';
-        this.favorites = JSON.parse(localStorage.getItem(this.key)) II [];
+        this.favorites = JSON.parse(localStorage.getItem(this.key)) || [];
     }
     add (id, name, image){
         if(!this.favorites.some(item => item.id === id)){
