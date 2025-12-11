@@ -14,7 +14,7 @@ h1{
     text-align: center;
 }
 .main{
-    max-width: 60%;
+    max-width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
